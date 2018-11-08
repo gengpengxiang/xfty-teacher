@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_splash"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="106dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@mipmap/ic_launcher_splash" />-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:background="#ffffff"
+        android:id="@+id/img_splash"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        fresco:actualImageScaleType="fitXY"
+        fresco:roundedCornerRadius="5dp"
+        fresco:roundAsCircle="true"
+        fresco:placeholderImage="@mipmap/ic_launcher_login"
+        fresco:placeholderImageScaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:text="顺天致性、仁智和美、多元幸福"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:background="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:background="@drawable/selector_item_student"
+    android:clickable="true">
+
+
+    <ImageView
+        android:id="@+id/iv_dian"
+        android:layout_marginLeft="36px"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_dian"/>
+
+    <TextView
+
+        android:layout_toRightOf="@+id/iv_dian"
+        android:layout_marginLeft="36px"
+        android:id="@+id/tv_grade"
+        android:text="一年级一班"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.bj.hmxxteacher.widget.AutoScaleTextView
+        android:lines="1"
+        android:text="100"
+        android:textSize="16sp"
+        app:minTextSize="8sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_score"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/tv_grade"
+        android:background="@mipmap/ic_yuan_xu"
+        />
+
+  <!--  <TextView
+        android:gravity="center"
+        android:id="@+id/tv_score"
+        android:text="100分"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/tv_grade"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_yuan_xu"/>-->
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/tv_score"
+        android:id="@+id/ll_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="70px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="点赞"
+            android:textColor="@color/text_color_small"
+            android:textSize="@dimen/text_size_standard" />
+
+        <TextView
+            android:id="@+id/tv_dianzanNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center_horizontal"
+            android:text="8"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/ll_badge"
+        android:id="@+id/ll_commend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="70px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="待改进"
+            android:textColor="@color/text_color_small"
+            android:textSize="@dimen/text_size_standard" />
+
+        <TextView
+            android:id="@+id/tv_gaijinNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_standard" />
+    </LinearLayout>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/tv_commend"
+        android:layout_width="wrap_content"
+        android:layout_height="75px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="48px"
+        android:background="@drawable/shape_btn_commend"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="评价"
+        android:textColor="@drawable/selector_text_color_commend"
+        android:textSize="@dimen/text_size_standard" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2" />
+
+</RelativeLayout>

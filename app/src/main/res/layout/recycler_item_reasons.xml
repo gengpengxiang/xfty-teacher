@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+
+        android:id="@+id/layout_sv"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_reason_item_corner"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_centerInParent="true"
+            android:id="@+id/sv_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            fresco:actualImageScaleType="fitXY"
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@mipmap/ic_reason_edit"
+            fresco:placeholderImageScaleType="fitXY" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layout_sv"
+        android:text="待人礼貌"
+        android:id="@+id/tv_reasonName"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/bt_add"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_add"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
